@@ -3,8 +3,8 @@ class Node:
             self.data = data
             self.next = None
 
-def insert(data:int):
-    pass
+# def insert(data:int):
+#     pass
 
 class LinkedList:
     def __init__(self):
@@ -42,5 +42,6 @@ linkedlist.push(20)
 
 linkedlist.push(30)
 linkedlist.push(40)
-
+linkedlist.append(10)
+linkedlist.push(5)
 linkedlist.printData()

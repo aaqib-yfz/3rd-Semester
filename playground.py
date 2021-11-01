@@ -192,49 +192,51 @@
 #         self.items=[]
 #     def push(self,item):
 #         self.items.append(item)
-class Node:
-    def __init__(self, data:int = None):
+
+# class Stack:
+#         def __init__(self):
+#             self.items = []
+
+#         def isEmpty(self):
+#             return self.items == []
+
+#         def push(self, item):
+#             self.items.append(item)
+
+#         def pop(self):
+#             return self.items.pop()
+
+#         def peek(self):
+#             return self.items[len(self.items)-1]
+
+#         def size(self):
+#             return len(self.items)
+
+# #from pythonds.basic.stack import Stack
+
+# def divideBy2(decNumber):
+#     remstack = Stack()
+
+#     while decNumber > 0:
+#         rem = decNumber % 2
+#         remstack.push(rem)
+#         decNumber = decNumber // 2
+
+#     binString = ""
+#     while not remstack.isEmpty():
+#         binString = binString+ str()
+
+class stack:
+    def __init__(self,data=None):
         self.data = data
-        self.next = None
 
-def insert(data:int):
-    pass
+    def push(self,data):
+        self.data.append(data)
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
-        self.tail = None
-
-    def push(self, data:int):
-        new_node = Node(data)
-
-        if self.head is None:
-            self.head = new_node
-            self.tail = new_node
-        else:
-            new_node.next = self.head
-            self.head = new_node
-
-    def append(self, data:int):
-        new_node = Node(data)
-        if self.head is None:
-            self.head = new_node
-            self.tail = new_node
-        else:
-            self.tail.next = new_node
-            self.tail = new_node
-
-    def printData(self):
-        temp = self.head
-
-        while temp is not None:
-            print(temp.data)
-            temp = temp.next
-
-linkedlist = LinkedList()
-linkedlist.push(20)
-
-linkedlist.push(30)
-linkedlist.push(40)
-
-linkedlist.printData()
+    def pop(self,data):
+        return self.data.pop()
+    def show(self):
+        return self.data
+aaqib=stack()
+aaqib.push(8)
+aaqib.show()
