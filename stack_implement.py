@@ -1,6 +1,6 @@
 class Stack: 
     def __init__(self): 
-        self.elem = [] 
+        self.elements = [] 
     
     def push(self, data): 
         self.elements.append(data) 
