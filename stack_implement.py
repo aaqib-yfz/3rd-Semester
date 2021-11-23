@@ -1,19 +1,21 @@
 class Stack: 
     def __init__(self): 
-        self.elements = [] 
+        self.items = [] 
     
     def push(self, data): 
-        self.elements.append(data) 
+        self.items.append(data) 
         return data 
     
     def pop(self): 
-        return self.elements.pop() 
+        return self.items.pop() 
         
     def peek(self): 
-        return self.elements[-1] 
+            return self.items[-1] 
         
     def is_empty(self): 
-        return len(self.elements) == 0
+        return self.items==[]
+    def size(self):
+        return len(self.items)
 
 if __name__ == '__main__':
     stack = Stack()
@@ -45,6 +47,8 @@ if __name__ == '__main__':
     stack.pop() 
     stack.pop() 
     stack.pop() 
-
+    stack.push(5)
+    print(stack.peek())
     ## checking the is_empty method for the last time -> true
     print(stack.is_empty())
+    print(stack.size())

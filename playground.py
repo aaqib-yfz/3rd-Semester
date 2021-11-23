@@ -226,17 +226,32 @@
 #     while not remstack.isEmpty():
 #         binString = binString+ str()
 
-class stack:
-    def __init__(self,data=None):
-        self.data = data
+# class stack:
+#     def __init__(self,data=None):
+#         self.data = data
 
+#     def push(self,data):
+#         self.data.append(data)
+
+#     def pop(self,data):
+#         return self.data.pop()
+#     def show(self):
+#         return self.data
+# aaqib=stack()
+# aaqib.push(8)
+# aaqib.show()
+
+class Stack:
+    def __init(self):
+        self.elements=[]
     def push(self,data):
-        self.data.append(data)
+        self.elements.append(data)
+        return data
 
-    def pop(self,data):
-        return self.data.pop()
-    def show(self):
-        return self.data
-aaqib=stack()
-aaqib.push(8)
-aaqib.show()
+    def pop(self):
+        self.elements.pop(data)
+        return data
+    def peek(self):
+        return self.elements=[-1]
+    def is_empty(self):
+        return len(self.elements)==0
