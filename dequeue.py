@@ -10,7 +10,7 @@ class Deque:
     def removeFront(self): 
             return self.items.pop() 
     def removeRear(self):
-            return self.items.pop(0) 
+            return self.items.pop(0) cv
     def size(self):    
             return len(self.items)
 d=Deque()
